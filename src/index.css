@@ -194,12 +194,12 @@
 
   .btn-whatsapp {
     @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-medium transition-all duration-300;
-    background: hsl(var(--whatsapp));
+    background-color: hsl(142 70% 45%);
     color: white;
   }
 
   .btn-whatsapp:hover {
-    background: hsl(142 70% 40%);
+    background-color: hsl(142 70% 40%);
     transform: scale(1.05);
     box-shadow: 0 8px 25px hsl(142 70% 45% / 0.4);
   }
@@ -216,15 +216,12 @@
   }
 
   .filter-chip {
-    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer;
-    background: hsl(var(--muted));
-    color: hsl(var(--muted-foreground));
+    @apply px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 cursor-pointer bg-muted text-muted-foreground;
   }
 
   .filter-chip:hover,
   .filter-chip.active {
-    background: hsl(var(--primary));
-    color: hsl(var(--primary-foreground));
+    @apply bg-primary text-primary-foreground;
   }
 
   .badge-repasse {
@@ -245,14 +242,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--muted));
+  background-color: hsl(40 15% 94%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--primary) / 0.5);
+  background-color: hsl(43 74% 40% / 0.5);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--primary));
+  background-color: hsl(43 74% 40%);
 }
